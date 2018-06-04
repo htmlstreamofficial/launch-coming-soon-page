@@ -1,0 +1,71 @@
+/*----------------------------------
+  Timer
+------------------------------------*/
+.u-timer {
+  &__section {
+    padding: 0 10px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 4px;
+      background: #fff;
+      width: 1px;
+      height: 30px;
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+  }
+
+  &__amount {
+    position: relative;
+    color: #fff;
+    display: block;
+    padding: 0 10px;
+    font: {
+      size: 2rem;
+      weight: 300;
+      style: normal;
+    }
+    line-height: 1;
+  }
+
+  &__period {
+    display: block;
+    color: #fff;
+    font: {
+      size: 13px;
+      weight: 300;
+      style: normal;
+    }
+    text-transform: uppercase;
+  }
+
+  @include media-breakpoint-up(sm) {
+    &__section {
+      padding: 0 20px;
+
+      &::after {
+        top: 4px;
+      }
+    }
+    &__amount {
+      font-size: 2.5rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__section::after {
+      top: 15px;
+    }
+    &__amount {
+      font-size: 3.5rem;
+    }
+  }
+}
