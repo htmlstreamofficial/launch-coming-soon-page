@@ -39,6 +39,6 @@ jQuery Parallax | https://ianlunn.co.uk/plugins/jquery-parallax
 
 ### Licensed under MIT
 
-Stream UI Kit is Open Source project and licensed under MIT for better Web.
+Launch - Coming Soon Page is Open Source project and licensed under MIT for better Web.
 
 ![MIT License](https://img.shields.io/cocoapods/l/AFNetworking.svg?style=for-the-badge)
